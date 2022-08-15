@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://2022-1-b.github.io/testdesuyo6/style.css">
+    <link rel="stylesheet" href="https://2022-1-b.github.io/testdesuyo6.css">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
   </head>
@@ -52,7 +52,7 @@
         <p>～お問い合わせ～</p>
       </div>
       <div class="matext">
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSevQtT0mSCmtLU9-3tAr_GYrBfzP6q1druRGkzdBR0WTHOl3w/formResponse" target="_self" method="POST" id="mG61Hd">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSevQtT0mSCmtLU9-3tAr_GYrBfzP6q1druRGkzdBR0WTHOl3w/formResponse" target="hidden_iframe" onsubmit="submitted=true;" method="POST" id="mG61Hd">
 
           <ul>
             <li>
@@ -132,6 +132,15 @@
         <p><small>&copy; 2022 : 9/10 - 9/11   MeidoMafiaJinrou produced by 1-B</small></p>
       </div>
     </footer>
+    <script type="text/javascript">
+    let submitted = false;
+</script>
+<iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display: none"
+    onload="if(submitted){window.location='https://contactanswer.meidomafiajinrou.com/';}"
+></iframe>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript">
       function PageTopAnime() {
